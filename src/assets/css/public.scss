@@ -1,0 +1,98 @@
+.custom-tree.el-tree {
+  background: none;
+}
+
+.custom-tree .el-tree-node {
+  position: relative;
+  padding-left: 16px;
+}
+
+.custom-tree .el-tree-node__children {
+  padding-left: 16px;
+}
+
+.custom-tree .el-tree-node :last-child:before {
+  height: 38px;
+}
+
+.custom-tree .el-tree>.el-tree-node:before {
+  border-left: none;
+}
+
+.custom-tree-container .el-tree>.el-tree-node:after {
+  border-top: none;
+}
+
+.custom-tree .el-tree-node:before {
+  content: "";
+  left: -4px;
+  position: absolute;
+  right: auto;
+  border-width: 1px;
+}
+
+.custom-tree .el-tree-node:after {
+  content: "";
+  left: -4px;
+  position: absolute;
+  right: auto;
+  border-width: 1px;
+}
+
+.custom-tree .el-tree-node__expand-icon.is-leaf {
+  display: none;
+}
+
+.custom-tree .el-tree-node:before {
+  border-left: 1px dashed #b8b9bb;
+  bottom: 0;
+  height: 100%;
+  top: -20px;
+  width: 1px;
+}
+
+.custom-tree .el-tree-node:after {
+  border-top: 1px dashed #b8b9bb;
+  height: 20px;
+  top: 20px;
+  width: 24px;
+}
+
+.custom-tree .el-tree-node__content {
+  height: 40px
+}
+
+.el-dialog {
+  border-radius: 20px !important;
+  overflow: hidden;
+
+  .el-dialog__header {
+    background-color: #153c65;
+    margin-right: 0;
+
+    .el-dialog__title {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}
+
+.el-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  .el-overlay-dialog {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.el-table div.cell {
+  overflow: visible;
+}
